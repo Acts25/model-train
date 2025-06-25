@@ -5,7 +5,7 @@ import joblib
 
 #LOad diabetes dataset
 x,y = load_diabetes(return_X_y=True)
-x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.2)
+x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.3)
 
 #train model
 model = LinearRegression()
