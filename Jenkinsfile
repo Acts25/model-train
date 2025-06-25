@@ -8,7 +8,8 @@ pipeline {
     }
     stage('Install Dependencies') {
        steps {
-         sh 'pipx install -r requirements.txt'
+         sh 'python3 -m pip install pipx'
+         sh 'python3 -m pip install -r requirements.txt'
        }
     }
     stage('Train Model') {
