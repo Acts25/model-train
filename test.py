@@ -5,7 +5,7 @@ import joblib
 import pandas as pd
 
 #load test data
-x, y = load_diabetes(return_x_y= True)
+x, y = load_diabetes(return_X_y= True)
 
 _,x_test, _, y_test = train_test_split(x,y,test_size=0.2)
 
